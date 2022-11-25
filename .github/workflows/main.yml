@@ -22,8 +22,6 @@ jobs:
 
         - uses: actions/checkout@v3
 
-         name: 'Test Github Action'
-        run: ls
 
       - name: 'Test Print'
         run: ls
