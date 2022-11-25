@@ -1,8 +1,8 @@
 FROM openjdk
 
-WORKDIR /src/java
+WORKDIR /application
 
-COPY . /src/java
+COPY DockerTask.java .
 
 RUN javac DockerTask.java
 
