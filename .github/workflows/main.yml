@@ -19,6 +19,11 @@ on:
 
            - name: "login to docker"
              run: docker login --username ahmeddapash112122 --password dckr_pat_JG4gJ6emWg8UASIXIEg8ffwYAds
+           - name: "build docker img"
+             run: docker build -t ahmeddapash112122/myimage
+
+           - name: "push to docker"
+             run: docker push ahmeddapash112122
 
 
 
