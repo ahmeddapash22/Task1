@@ -16,8 +16,10 @@ jobs:
      - uses: actions/checkout@v3
      - name: "login to docker"
        run: docker login --username ${{ srcrets.DOCKER_USERNAME }} --password &{{ secrets.DOCKER_TOCKEN }}
+
      - name: "build docker img"
         run: docker build -t ${{ srcrets.DOCKER_USERNAME }}/ahmed . 
+        
       - name: "push to docker"
          run: docker push ${{ srcrets.DOCKER_USERNAME }}/ahmed
 
